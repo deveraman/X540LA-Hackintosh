@@ -309,21 +309,33 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x1B,0x0)</key>
 			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,27,0</string>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>hda-gfx</key>
+				<string>onboard-2</string>
 				<key>layout-id</key>
-				<data>AQAAAA==</data>
+				<data>AwAAAA==</data>
+				<key>model</key>
+				<string>Wildcat Point-LP High Definition Audio Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>BgAmFg==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,2,0</string>
+				<key>AAPL00,override-no-connect</key>
+				<data>AP///////wANrnycAAAAACIYAQSVIhNgAm+xp1VMniUMUFQAAAABAQEBAQEBAQEBAQEBAQEB2h1W4lAAIDBELUcAWMEQAAAYAAAA/gBOMTU2QkdFLUU0MgogAAAA/gBDTU4KICAgICAgICAgAAAA/gBOMTU2QkdFLUU0MgogAJ8=</data>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>model</key>
+				<string>Intel HD Graphics 5500</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -488,6 +500,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooPS2Trackpad</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>AppleALC.kext</string>
+				<key>Comment</key>
+				<string>AppleALC.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AppleALC</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1545,7 +1575,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 debug=0x100 -wegdbg amfi_get_out_of_my_way=0x1</string>
+				<string>-v keepsyms=1 debug=0x100 -wegdbg amfi_get_out_of_my_way=0x1 alcid=3</string>
 				<key>csr-active-config</key>
 				<data>AwgAAA==</data>
 				<key>prev-lang:kbd</key>
